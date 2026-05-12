@@ -55,8 +55,7 @@ export const projects: Project[] = [
     category: "Landing Page",
     platform: "Vercel",
     technologies: ["TypeScript", "Tailwind", "Vite"],
-    liveUrl: "https://dental-clinic-dental-clinic.vercel.app",
-    repoUrl: "https://github.com/davipinheirooo1288-lang/dental-clinic",
+    liveUrl: "https://dentalclinic-ita.vercel.app",
     gradient: "linear-gradient(135deg, #050505 0%, #0a1628 50%, #001428 100%)",
   },
   {
