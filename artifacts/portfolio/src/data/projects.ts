@@ -8,6 +8,7 @@ export interface Project {
   liveUrl: string;
   repoUrl?: string;
   gradient: string;
+  image: string;
 }
 
 export const projects: Project[] = [
@@ -22,6 +23,7 @@ export const projects: Project[] = [
     liveUrl: "https://divina-barbearia.davipinheirooo1288.workers.dev",
     repoUrl: "https://github.com/davipinheirooo1288-lang/divina-barbearia",
     gradient: "linear-gradient(135deg, #0a0a0a 0%, #1a0a00 50%, #2d1600 100%)",
+    image: "/projects/divina-barbearia.png",
   },
   {
     id: "clinic-vet",
@@ -34,6 +36,7 @@ export const projects: Project[] = [
     liveUrl: "https://clinic-vet.vercel.app",
     repoUrl: "https://github.com/davipinheirooo1288-lang/Clinic-vet",
     gradient: "radial-gradient(ellipse at top left, #0a1628 0%, #050505 60%, #0d1f0d 100%)",
+    image: "/projects/clinic-vet.png",
   },
   {
     id: "cinvet",
@@ -46,6 +49,7 @@ export const projects: Project[] = [
     liveUrl: "https://cinvet.vercel.app",
     repoUrl: "https://github.com/davipinheirooo1288-lang/cinvet",
     gradient: "linear-gradient(160deg, #050505 0%, #0f1a2e 50%, #050e05 100%)",
+    image: "/projects/cinvet.png",
   },
   {
     id: "dental-clinic",
@@ -57,6 +61,7 @@ export const projects: Project[] = [
     technologies: ["TypeScript", "Tailwind", "Vite"],
     liveUrl: "https://dentalclinic-ita.vercel.app",
     gradient: "linear-gradient(135deg, #050505 0%, #0a1628 50%, #001428 100%)",
+    image: "/projects/dental-clinic.png",
   },
   {
     id: "oral-vitta",
@@ -69,6 +74,7 @@ export const projects: Project[] = [
     liveUrl: "https://oralvitta.vercel.app",
     repoUrl: "https://github.com/davipinheirooo1288-lang/oral-vitta-site",
     gradient: "linear-gradient(to bottom right, #050505, #0f1520, #050d1a)",
+    image: "/projects/oral-vitta.png",
   },
   {
     id: "oss-barbeiros",
@@ -81,5 +87,6 @@ export const projects: Project[] = [
     liveUrl: "https://oss-barbeiros.vercel.app",
     repoUrl: "https://github.com/davipinheirooo1288-lang/Oss-Barbeiros",
     gradient: "linear-gradient(135deg, #0a0a0a 0%, #1a1a0a 50%, #0d0800 100%)",
+    image: "/projects/oss-barbeiros.png",
   },
 ];

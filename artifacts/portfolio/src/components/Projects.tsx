@@ -2,7 +2,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { SiVercel, SiCloudflare } from "react-icons/si";
 import { ExternalLink } from "lucide-react";
 import { projects } from "@/data/projects";
-import CardIllustration from "@/components/CardIllustration";
 
 export default function Projects() {
   const filteredProjects = projects;
@@ -35,11 +34,17 @@ export default function Projects() {
                 style={{ background: "hsl(221,44%,9%)", borderColor: "hsl(220,30%,18%)" }}
                 data-testid={`project-card-${project.id}`}
               >
-                <div className="relative">
-                  <CardIllustration projectId={project.id} />
+                <div className="relative h-56 overflow-hidden">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500" />
                   <div className="absolute bottom-4 left-4 flex gap-2">
                     {project.technologies.slice(0, 3).map((tech) => (
-                      <span key={tech} className="px-2.5 py-1 text-xs font-medium text-white/80 bg-white/10 backdrop-blur-md rounded border border-white/10">
+                      <span key={tech} className="px-2.5 py-1 text-xs font-medium text-white/80 bg-black/40 backdrop-blur-md rounded border border-white/10">
                         {tech}
                       </span>
                     ))}
