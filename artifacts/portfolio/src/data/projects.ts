@@ -7,61 +7,80 @@ export interface Project {
   technologies: string[];
   liveUrl: string;
   repoUrl?: string;
-  gradient: string; // CSS gradient string for the preview image area
+  gradient: string;
 }
 
 export const projects: Project[] = [
   {
-    id: "p1",
-    title: "Aura Architecture",
-    description: "A minimalist studio portfolio with dynamic 3D WebGL reveals and buttery smooth transitions.",
-    category: "Landing Page",
-    platform: "Vercel",
-    technologies: ["React", "Three.js", "Framer Motion", "Tailwind"],
-    liveUrl: "#",
-    repoUrl: "#",
-    gradient: "linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%)",
-  },
-  {
-    id: "p2",
-    title: "Nova Commerce",
-    description: "High-performance headless e-commerce storefront handling 10k+ concurrent users.",
-    category: "E-commerce",
-    platform: "Cloudflare",
-    technologies: ["Next.js", "Shopify", "Stripe", "Radix UI"],
-    liveUrl: "#",
-    gradient: "linear-gradient(to right, #000000, #171717)",
-  },
-  {
-    id: "p3",
-    title: "Nexus Dashboard",
-    description: "Real-time analytics dashboard with WebSockets and complex data visualizations.",
-    category: "Web App",
-    platform: "Vercel",
-    technologies: ["React", "TypeScript", "Recharts", "Socket.io"],
-    liveUrl: "#",
-    repoUrl: "#",
-    gradient: "radial-gradient(circle at top right, #1e3a8a, #020617)",
-  },
-  {
-    id: "p4",
-    title: "Echo Landing",
-    description: "Conversion-optimized landing page for a B2B SaaS platform with interactive product demos.",
+    id: "divina-barbearia",
+    title: "Divina Barbearia",
+    description:
+      "Site completo para barbearia premium com agendamento, portfólio de cortes e experiência de marca sofisticada.",
     category: "Landing Page",
     platform: "Cloudflare",
-    technologies: ["Vite", "React", "GSAP", "Tailwind"],
-    liveUrl: "#",
-    gradient: "linear-gradient(180deg, #050505 0%, #0f172a 100%)",
+    technologies: ["React", "TypeScript", "TanStack", "Tailwind", "Framer Motion", "Radix UI"],
+    liveUrl: "https://divinabarbearia.vercel.app",
+    repoUrl: "https://github.com/davipinheirooo1288-lang/divina-barbearia",
+    gradient: "linear-gradient(135deg, #0a0a0a 0%, #1a0a00 50%, #2d1600 100%)",
   },
   {
-    id: "p5",
-    title: "Onyx Tracker",
-    description: "Personal finance and investment tracking application with bank integrations.",
+    id: "clinic-vet",
+    title: "Clinic-Vet IA",
+    description:
+      "Plataforma veterinária com inteligência artificial integrada via Gemini AI, backend Express e interface moderna.",
     category: "Web App",
     platform: "Vercel",
-    technologies: ["React", "Zustand", "Tailwind", "Plaid API"],
-    liveUrl: "#",
-    repoUrl: "#",
-    gradient: "linear-gradient(to bottom right, #020617, #0f172a, #172554)",
-  }
+    technologies: ["React", "TypeScript", "Gemini AI", "Express", "Tailwind", "Framer Motion"],
+    liveUrl: "https://clinic-vet.vercel.app",
+    repoUrl: "https://github.com/davipinheirooo1288-lang/Clinic-vet",
+    gradient: "radial-gradient(ellipse at top left, #0a1628 0%, #050505 60%, #0d1f0d 100%)",
+  },
+  {
+    id: "cinvet",
+    title: "Cinvet",
+    description:
+      "Sistema de gestão para clínica veterinária com interface limpa e focada na experiência do usuário.",
+    category: "Web App",
+    platform: "Vercel",
+    technologies: ["TypeScript", "React", "Tailwind"],
+    liveUrl: "https://cinvet.vercel.app",
+    repoUrl: "https://github.com/davipinheirooo1288-lang/cinvet",
+    gradient: "linear-gradient(160deg, #050505 0%, #0f1a2e 50%, #050e05 100%)",
+  },
+  {
+    id: "dental-clinic",
+    title: "Dental Clinic",
+    description:
+      "Site institucional para clínica odontológica com design clean, apresentação de serviços e call-to-action eficaz.",
+    category: "Landing Page",
+    platform: "Vercel",
+    technologies: ["TypeScript", "Tailwind", "Vite"],
+    liveUrl: "https://dental-clinic-dental-clinic.vercel.app",
+    repoUrl: "https://github.com/davipinheirooo1288-lang/dental-clinic",
+    gradient: "linear-gradient(135deg, #050505 0%, #0a1628 50%, #001428 100%)",
+  },
+  {
+    id: "oral-vitta",
+    title: "Oral Vitta",
+    description:
+      "Landing page para clínica odontológica com apresentação de especialidades, equipe e formulário de contato.",
+    category: "Landing Page",
+    platform: "Vercel",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    liveUrl: "https://oralvitta.vercel.app",
+    repoUrl: "https://github.com/davipinheirooo1288-lang/oral-vitta-site",
+    gradient: "linear-gradient(to bottom right, #050505, #0f1520, #050d1a)",
+  },
+  {
+    id: "oss-barbeiros",
+    title: "Oss Barbeiros",
+    description:
+      "Site de landing page para barbearia urbana com galeria de trabalhos, localização e reserva de horários.",
+    category: "Landing Page",
+    platform: "Vercel",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    liveUrl: "https://oss-barbeiros.vercel.app",
+    repoUrl: "https://github.com/davipinheirooo1288-lang/Oss-Barbeiros",
+    gradient: "linear-gradient(135deg, #0a0a0a 0%, #1a1a0a 50%, #0d0800 100%)",
+  },
 ];

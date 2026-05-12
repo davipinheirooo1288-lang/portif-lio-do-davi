@@ -4,7 +4,7 @@ import { Linkedin, Github, MessageCircle } from "lucide-react";
 export default function Contact() {
   const links = [
     { name: "LinkedIn", url: "https://linkedin.com/in/davipinheiro", icon: Linkedin },
-    { name: "GitHub", url: "https://github.com/davipinheiro", icon: Github },
+    { name: "GitHub", url: "https://github.com/davipinheirooo1288-lang", icon: Github },
     { name: "WhatsApp", url: "https://wa.me/5500000000000", icon: MessageCircle },
   ];
 
