@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { SiVercel, SiCloudflare } from "react-icons/si";
-import { Github, ExternalLink } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import { projects } from "@/data/projects";
 import CardIllustration from "@/components/CardIllustration";
 
@@ -99,17 +99,6 @@ export default function Projects() {
                     >
                       <ExternalLink size={14} /> Live Site
                     </a>
-                    {project.repoUrl && (
-                      <a
-                        href={project.repoUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-2 text-sm font-medium text-white/50 hover:text-white transition-colors"
-                        data-testid={`link-repo-${project.id}`}
-                      >
-                        <Github size={14} /> Código
-                      </a>
-                    )}
                   </div>
                 </div>
               </motion.div>
