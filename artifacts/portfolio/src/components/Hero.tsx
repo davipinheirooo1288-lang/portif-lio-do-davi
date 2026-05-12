@@ -13,52 +13,67 @@ export default function Hero() {
         playsInline
       />
 
-      {/* Multi-layer overlay for premium depth */}
-      <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, rgba(4,8,20,0.55) 0%, rgba(4,8,20,0.4) 40%, rgba(4,8,20,0.7) 80%, rgba(4,8,20,0.95) 100%)" }} />
-      <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse at center, transparent 30%, rgba(4,8,20,0.5) 100%)" }} />
+      {/* Subtle cinematic overlay — lets video breathe */}
+      <div
+        className="absolute inset-0"
+        style={{
+          background:
+            "linear-gradient(to bottom, rgba(4,8,20,0.38) 0%, rgba(4,8,20,0.22) 35%, rgba(4,8,20,0.55) 75%, rgba(4,8,20,0.97) 100%)",
+        }}
+      />
+      {/* Edge vignette */}
+      <div
+        className="absolute inset-0"
+        style={{
+          background:
+            "radial-gradient(ellipse at 50% 45%, transparent 40%, rgba(4,8,20,0.55) 100%)",
+        }}
+      />
 
-      {/* Subtle blue vignette at top-right */}
-      <div className="absolute top-0 right-0 w-[50vw] h-[50vh] pointer-events-none" style={{ background: "radial-gradient(circle at 80% 20%, rgba(59,130,246,0.08) 0%, transparent 60%)" }} />
+      {/* Content — centered on video */}
+      <div className="relative z-10 max-w-5xl mx-auto w-full flex flex-col items-center text-center px-6 md:px-12">
 
-      {/* Content */}
-      <div className="relative z-10 max-w-6xl mx-auto w-full flex flex-col items-center text-center px-6 md:px-12">
-
-        {/* Badge */}
+        {/* Eyebrow */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+          className="mb-6"
         >
           <span
-            className="inline-block mb-8 px-5 py-1.5 rounded-full text-xs font-semibold tracking-[0.25em] uppercase"
             style={{
-              background: "rgba(255,255,255,0.07)",
-              border: "1px solid rgba(255,255,255,0.15)",
-              color: "rgba(255,255,255,0.6)",
-              backdropFilter: "blur(10px)",
+              display: "inline-block",
+              fontFamily: "'Inter', sans-serif",
+              fontSize: "0.65rem",
+              fontWeight: 500,
+              letterSpacing: "0.28em",
+              textTransform: "uppercase",
+              color: "rgba(200,220,255,0.45)",
             }}
           >
-            Desenvolvedor de Software · Brasil
+            Desenvolvedor de Software &nbsp;·&nbsp; Brasil
           </span>
         </motion.div>
 
-        {/* MY WORKSPACE headline */}
+        {/* MY WORKSPACE — main headline */}
         <motion.div
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0, y: 36 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 1.1, delay: 0.12, ease: [0.16, 1, 0.3, 1] }}
           className="mb-6"
         >
           <h1
-            className="font-bold tracking-tighter leading-none"
             style={{
-              fontSize: "clamp(3.5rem, 12vw, 10rem)",
-              background: "linear-gradient(180deg, #ffffff 0%, rgba(255,255,255,0.75) 100%)",
+              fontFamily: "'Cormorant Garamond', Georgia, serif",
+              fontSize: "clamp(4rem, 13vw, 11rem)",
+              fontWeight: 300,
+              letterSpacing: "-0.02em",
+              lineHeight: 0.95,
+              background: "linear-gradient(175deg, #ffffff 10%, rgba(190,215,255,0.65) 100%)",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
               backgroundClip: "text",
-              textShadow: "none",
-              filter: "drop-shadow(0 2px 40px rgba(59,130,246,0.18))",
+              filter: "drop-shadow(0 4px 60px rgba(59,130,246,0.15))",
             }}
           >
             My Workspace
@@ -67,41 +82,97 @@ export default function Hero() {
 
         {/* Tagline */}
         <motion.p
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-          className="text-lg md:text-xl font-light leading-relaxed max-w-2xl mb-12"
-          style={{ color: "rgba(200,215,255,0.55)" }}
+          transition={{ duration: 0.9, delay: 0.28, ease: [0.16, 1, 0.3, 1] }}
+          style={{
+            fontFamily: "'Inter', sans-serif",
+            fontSize: "clamp(0.9rem, 1.5vw, 1.1rem)",
+            fontWeight: 300,
+            color: "rgba(180,205,255,0.45)",
+            lineHeight: 1.7,
+            letterSpacing: "0.02em",
+            maxWidth: "32rem",
+            marginBottom: "3rem",
+          }}
         >
-          Interfaces precisas. Experiências excepcionais. Onde a engenharia encontra o design.
+          Interfaces precisas. Experiências excepcionais.
+          <br />
+          Onde a engenharia encontra o design.
         </motion.p>
 
-        {/* CTAs */}
+        {/* Buttons — glass / integrated into video */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9, delay: 0.45, ease: [0.16, 1, 0.3, 1] }}
-          className="flex items-center gap-4"
+          transition={{ duration: 0.9, delay: 0.44, ease: [0.16, 1, 0.3, 1] }}
+          className="flex items-center gap-3"
         >
+          {/* Primary — frosted glass with blue tint */}
           <a
             href="#projetos"
-            className="inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white rounded-full transition-all duration-300 hover:scale-105"
+            className="inline-flex items-center justify-center transition-all duration-400 hover:scale-[1.03]"
             style={{
-              background: "linear-gradient(135deg, #1d4ed8, #3b82f6)",
-              boxShadow: "0 0 32px rgba(59,130,246,0.4), inset 0 1px 0 rgba(255,255,255,0.15)",
+              padding: "0.8rem 2rem",
+              borderRadius: "999px",
+              fontFamily: "'Inter', sans-serif",
+              fontSize: "0.8rem",
+              fontWeight: 500,
+              letterSpacing: "0.1em",
+              textTransform: "uppercase",
+              color: "rgba(255,255,255,0.9)",
+              background: "rgba(59,130,246,0.18)",
+              border: "1px solid rgba(100,160,255,0.35)",
+              backdropFilter: "blur(16px)",
+              boxShadow: "0 2px 24px rgba(59,130,246,0.18), inset 0 1px 0 rgba(255,255,255,0.08)",
+              transition: "all 0.35s ease",
+            }}
+            onMouseEnter={(e) => {
+              const el = e.currentTarget as HTMLElement;
+              el.style.background = "rgba(59,130,246,0.32)";
+              el.style.borderColor = "rgba(120,180,255,0.55)";
+              el.style.boxShadow = "0 4px 40px rgba(59,130,246,0.32), inset 0 1px 0 rgba(255,255,255,0.12)";
+            }}
+            onMouseLeave={(e) => {
+              const el = e.currentTarget as HTMLElement;
+              el.style.background = "rgba(59,130,246,0.18)";
+              el.style.borderColor = "rgba(100,160,255,0.35)";
+              el.style.boxShadow = "0 2px 24px rgba(59,130,246,0.18), inset 0 1px 0 rgba(255,255,255,0.08)";
             }}
             data-testid="button-view-projects"
           >
             Ver Projetos
           </a>
+
+          {/* Secondary — pure glass, almost invisible */}
           <a
             href="#contato"
-            className="inline-flex items-center justify-center px-8 py-4 text-sm font-medium rounded-full transition-all duration-300 hover:scale-105"
+            className="inline-flex items-center justify-center transition-all duration-400 hover:scale-[1.03]"
             style={{
-              color: "rgba(255,255,255,0.75)",
-              border: "1px solid rgba(255,255,255,0.15)",
-              backdropFilter: "blur(10px)",
-              background: "rgba(255,255,255,0.05)",
+              padding: "0.8rem 2rem",
+              borderRadius: "999px",
+              fontFamily: "'Inter', sans-serif",
+              fontSize: "0.8rem",
+              fontWeight: 400,
+              letterSpacing: "0.1em",
+              textTransform: "uppercase",
+              color: "rgba(255,255,255,0.45)",
+              background: "rgba(255,255,255,0.04)",
+              border: "1px solid rgba(255,255,255,0.12)",
+              backdropFilter: "blur(12px)",
+              transition: "all 0.35s ease",
+            }}
+            onMouseEnter={(e) => {
+              const el = e.currentTarget as HTMLElement;
+              el.style.color = "rgba(255,255,255,0.75)";
+              el.style.background = "rgba(255,255,255,0.09)";
+              el.style.borderColor = "rgba(255,255,255,0.22)";
+            }}
+            onMouseLeave={(e) => {
+              const el = e.currentTarget as HTMLElement;
+              el.style.color = "rgba(255,255,255,0.45)";
+              el.style.background = "rgba(255,255,255,0.04)";
+              el.style.borderColor = "rgba(255,255,255,0.12)";
             }}
             data-testid="button-contact"
           >
@@ -114,13 +185,26 @@ export default function Hero() {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 1.4, duration: 1 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
+        transition={{ delay: 1.6, duration: 1 }}
+        className="absolute bottom-9 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
       >
-        <span className="text-[10px] uppercase tracking-[0.3em]" style={{ color: "rgba(255,255,255,0.25)" }}>
+        <span
+          style={{
+            fontFamily: "'Inter', sans-serif",
+            fontSize: "0.58rem",
+            letterSpacing: "0.3em",
+            textTransform: "uppercase",
+            color: "rgba(255,255,255,0.2)",
+          }}
+        >
           Scroll
         </span>
-        <div className="w-[1px] h-10" style={{ background: "linear-gradient(to bottom, rgba(255,255,255,0.25), transparent)" }} />
+        <motion.div
+          animate={{ y: [0, 6, 0] }}
+          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+          className="w-[1px] h-8"
+          style={{ background: "linear-gradient(to bottom, rgba(255,255,255,0.2), transparent)" }}
+        />
       </motion.div>
     </section>
   );
