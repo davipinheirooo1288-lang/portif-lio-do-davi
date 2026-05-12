@@ -1,11 +1,10 @@
 import { motion } from "framer-motion";
-import { Linkedin, Github, MessageCircle } from "lucide-react";
+import { Instagram, MessageCircle } from "lucide-react";
 
 export default function Contact() {
   const links = [
-    { name: "LinkedIn", url: "https://linkedin.com/in/davipinheiro", icon: Linkedin },
-    { name: "GitHub", url: "https://github.com/davipinheirooo1288-lang", icon: Github },
     { name: "WhatsApp", url: "https://wa.me/5585992764792", icon: MessageCircle },
+    { name: "Instagram", url: "https://www.instagram.com/davipinheirou/", icon: Instagram },
   ];
 
   return (
