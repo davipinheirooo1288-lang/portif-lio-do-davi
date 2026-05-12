@@ -36,17 +36,28 @@ export default function Navbar() {
           transition={{ duration: 0.3, ease: "easeInOut" }}
           className="fixed top-0 left-0 right-0 z-50 px-6 py-4 md:px-12 md:py-6"
         >
-          <div className="max-w-7xl mx-auto flex items-center justify-between bg-black/30 backdrop-blur-md border border-white/10 rounded-2xl px-6 py-3 shadow-2xl">
-            <a href="#" className="text-xl font-medium tracking-tight text-white" data-testid="link-home">
+          <div
+            className="max-w-7xl mx-auto flex items-center justify-between backdrop-blur-md rounded-2xl px-6 py-3 shadow-2xl"
+            style={{
+              background: "rgba(10, 22, 40, 0.75)",
+              border: "1px solid rgba(59,130,246,0.15)",
+              boxShadow: "0 4px 32px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.04)",
+            }}
+          >
+            <a
+              href="#"
+              className="text-xl font-semibold tracking-tight text-white hover:text-blue-400 transition-colors duration-200"
+              data-testid="link-home"
+            >
               Davi Pinheiro
             </a>
-            
+
             <ul className="flex items-center gap-8">
               {navLinks.map((link) => (
                 <li key={link.name}>
                   <a
                     href={link.href}
-                    className="text-sm font-medium text-white/70 hover:text-white transition-colors duration-200"
+                    className="text-sm font-medium text-white/60 hover:text-white transition-colors duration-200"
                     data-testid={`link-${link.name.toLowerCase()}`}
                   >
                     {link.name}

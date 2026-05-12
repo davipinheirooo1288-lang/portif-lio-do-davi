@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { SiVercel, SiCloudflare } from "react-icons/si";
 import { Github, ExternalLink } from "lucide-react";
 import { projects } from "@/data/projects";
+import CardIllustration from "@/components/CardIllustration";
 
 type Category = "Landing Page" | "E-commerce" | "Web App" | "Todos";
 
@@ -32,7 +33,7 @@ export default function Projects() {
             <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-white mb-4">Projetos</h2>
             <p className="text-white/50 text-lg max-w-md">Uma seleção de trabalhos recentes, focados em performance e excelência visual.</p>
           </div>
-          
+
           <div className="flex flex-wrap gap-2">
             {categories.map((cat) => (
               <button
@@ -40,8 +41,8 @@ export default function Projects() {
                 onClick={() => setFilter(cat)}
                 className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
                   filter === cat
-                    ? "bg-white text-black"
-                    : "bg-white/5 text-white/60 hover:bg-white/10 hover:text-white border border-white/10"
+                    ? "bg-primary text-white shadow-lg shadow-primary/25"
+                    : "bg-blue-950/50 text-white/60 hover:bg-blue-900/40 hover:text-white border border-blue-800/30"
                 }`}
                 data-testid={`filter-${cat.toLowerCase().replace(" ", "-")}`}
               >
@@ -61,17 +62,12 @@ export default function Projects() {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.95 }}
                 transition={{ duration: 0.5, type: "spring", bounce: 0.3 }}
-                className="group relative flex flex-col bg-black/30 backdrop-blur-md rounded-2xl border border-white/10 overflow-hidden hover:scale-[1.03] transition-all duration-500 hover:shadow-[0_0_30px_rgba(59,130,246,0.15)] hover:border-primary/50"
+                className="group relative flex flex-col rounded-2xl border overflow-hidden hover:scale-[1.03] transition-all duration-500 hover:shadow-[0_0_40px_rgba(59,130,246,0.2)] hover:border-primary/50"
+                style={{ background: "hsl(221,44%,9%)", borderColor: "hsl(220,30%,18%)" }}
                 data-testid={`project-card-${project.id}`}
               >
-                <div 
-                  className="w-full h-56 relative overflow-hidden"
-                  style={{ background: project.gradient }}
-                >
-                  {/* Subtle overlay on the gradient for texture */}
-                  <div className="absolute inset-0 bg-black/10 mix-blend-overlay" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
-                  
+                <div className="relative">
+                  <CardIllustration projectId={project.id} />
                   <div className="absolute bottom-4 left-4 flex gap-2">
                     {project.technologies.slice(0, 3).map((tech) => (
                       <span key={tech} className="px-2.5 py-1 text-xs font-medium text-white/80 bg-white/10 backdrop-blur-md rounded border border-white/10">
@@ -84,15 +80,15 @@ export default function Projects() {
                 <div className="p-6 flex flex-col flex-1">
                   <div className="flex items-start justify-between mb-4">
                     <h3 className="text-xl font-semibold text-white tracking-tight">{project.title}</h3>
-                    <div className="flex items-center gap-2 text-white/40">
+                    <div className="flex items-center gap-2 text-blue-400/60">
                       {project.platform === "Vercel" ? <SiVercel size={16} /> : <SiCloudflare size={16} />}
                     </div>
                   </div>
-                  
-                  <p className="text-white/60 text-sm leading-relaxed mb-8 flex-1">
+
+                  <p className="text-white/55 text-sm leading-relaxed mb-8 flex-1">
                     {project.description}
                   </p>
-                  
+
                   <div className="flex items-center gap-4 mt-auto">
                     <a
                       href={project.liveUrl}
@@ -108,7 +104,7 @@ export default function Projects() {
                         href={project.repoUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-2 text-sm font-medium text-white/60 hover:text-white transition-colors"
+                        className="flex items-center gap-2 text-sm font-medium text-white/50 hover:text-white transition-colors"
                         data-testid={`link-repo-${project.id}`}
                       >
                         <Github size={14} /> Código

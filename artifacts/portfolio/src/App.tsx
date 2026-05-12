@@ -6,6 +6,7 @@ import NotFound from "@/pages/not-found";
 import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import Marquee from "@/components/Marquee";
 import Projects from "@/components/Projects";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
@@ -19,6 +20,7 @@ function Home() {
       <Navbar />
       <main className="flex-1 flex flex-col">
         <Hero />
+        <Marquee />
         <Projects />
         <About />
         <Contact />
