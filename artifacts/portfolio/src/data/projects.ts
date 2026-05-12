@@ -19,7 +19,7 @@ export const projects: Project[] = [
     category: "Landing Page",
     platform: "Cloudflare",
     technologies: ["React", "TypeScript", "TanStack", "Tailwind", "Framer Motion", "Radix UI"],
-    liveUrl: "https://divinabarbearia.vercel.app",
+    liveUrl: "https://divina-barbearia.davipinheirooo1288.workers.dev",
     repoUrl: "https://github.com/davipinheirooo1288-lang/divina-barbearia",
     gradient: "linear-gradient(135deg, #0a0a0a 0%, #1a0a00 50%, #2d1600 100%)",
   },
