@@ -34,12 +34,13 @@ export default function Projects() {
                 style={{ background: "hsl(221,44%,9%)", borderColor: "hsl(220,30%,18%)" }}
                 data-testid={`project-card-${project.id}`}
               >
-                <div className="relative h-56 overflow-hidden">
+                <div className="relative h-56 overflow-hidden" style={{ background: project.gradient }}>
                   <img
                     src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     loading="lazy"
+                    onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = "none"; }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500" />
                   <div className="absolute bottom-4 left-4 flex gap-2">
