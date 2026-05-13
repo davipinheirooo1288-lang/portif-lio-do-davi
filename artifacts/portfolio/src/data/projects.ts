@@ -101,4 +101,16 @@ export const projects: Project[] = [
     gradient: "linear-gradient(135deg, #050a14 0%, #0a1a2e 50%, #001428 100%)",
     image: "/projects/clinica-odonto-melo.svg",
   },
+  {
+    id: "ita-odonto",
+    title: "Ita Odonto",
+    description:
+      "Landing page para clínica odontológica em Itapipoca-CE: serviços, depoimentos, horários (incluindo plantão aos domingos) e CTAs para WhatsApp e agendamento.",
+    category: "Landing Page",
+    platform: "Cloudflare",
+    technologies: ["React", "TypeScript", "Tailwind", "Cloudflare Workers"],
+    liveUrl: "https://ita-odonto.davipinheirooo1288.workers.dev",
+    gradient: "linear-gradient(135deg, #042f2e 0%, #0c4a6e 50%, #134e4a 100%)",
+    image: "/projects/ita-odonto.svg",
+  },
 ];
