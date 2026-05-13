@@ -4,9 +4,10 @@ pnpm-workspace.yaml
 tsconfig.base.json
 tsconfig.json
 .npmrc
-lib/
-scripts/
-.local/
-.agents/
-attached_assets/
-scratch/
+/lib/
+/scripts/
+/.local/
+/.agents/
+/attached_assets/
+/scratch/
+
