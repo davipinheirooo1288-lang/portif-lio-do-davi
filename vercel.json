@@ -1,6 +1,4 @@
 {
-  "installCommand": "npm install --prefix artifacts/portfolio",
-  "buildCommand": "npm run build --prefix artifacts/portfolio",
   "outputDirectory": "artifacts/portfolio/dist",
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
