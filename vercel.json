@@ -1,0 +1,7 @@
+{
+  "buildCommand": "cd artifacts/portfolio && npm install && npm run build",
+  "outputDirectory": "artifacts/portfolio/dist",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
