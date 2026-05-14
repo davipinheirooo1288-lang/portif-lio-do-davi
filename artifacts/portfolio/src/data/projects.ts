@@ -13,6 +13,18 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: "clinica-vitae",
+    title: "Clínica Vitae",
+    description:
+      "Landing page premium para clínica odontológica em Fortaleza-CE, com serviços, depoimentos, localização, horários e agendamento via WhatsApp.",
+    category: "Landing Page",
+    platform: "Vercel",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    liveUrl: "https://clinica-vitae.vercel.app",
+    gradient: "linear-gradient(135deg, #07120f 0%, #123c35 48%, #c4a46a 100%)",
+    image: "/projects/clinica-vitae.jpg",
+  },
+  {
     id: "divina-barbearia",
     title: "Divina Barbearia",
     description:
