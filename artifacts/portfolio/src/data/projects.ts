@@ -113,4 +113,16 @@ export const projects: Project[] = [
     gradient: "linear-gradient(135deg, #042f2e 0%, #0c4a6e 50%, #134e4a 100%)",
     image: "/projects/ita-odonto.svg",
   },
+  {
+    id: "clinica-odontologica-ferreira-seraf",
+    title: "Consultório Ferreira Serafim",
+    description:
+      "Landing page para consultório odontológico em Sobral-CE: especialidades, depoimentos, reputação no Google, localização no São Lucas Medical Center e agendamento via WhatsApp.",
+    category: "Landing Page",
+    platform: "Vercel",
+    technologies: ["React", "TypeScript", "Tailwind"],
+    liveUrl: "https://clinica-odontologica-ferreira-seraf.vercel.app",
+    gradient: "linear-gradient(135deg, #0a0f1a 0%, #132038 45%, #0c1628 100%)",
+    image: "/projects/clinica-ferreira-serafim.svg",
+  },
 ];
