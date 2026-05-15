@@ -13,6 +13,18 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: "clinica-costa-campos",
+    title: "Clínica Costa Campos",
+    description:
+      "Landing page para clínica médica em Itapipoca-CE, com especialidades, equipe, avaliações, localização e agendamento inteligente via WhatsApp.",
+    category: "Landing Page",
+    platform: "Vercel",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    liveUrl: "https://clinica-costa-campos.vercel.app",
+    gradient: "linear-gradient(135deg, #08231d 0%, #16614f 48%, #d1b46f 100%)",
+    image: "/projects/clinica-costa-campos.jpg",
+  },
+  {
     id: "petsus",
     title: "PetSUS",
     description:
