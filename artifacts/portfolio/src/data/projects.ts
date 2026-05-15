@@ -13,6 +13,18 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: "petsus",
+    title: "PetSUS",
+    description:
+      "Landing page para clínica veterinária popular 24h em Fortaleza-CE, com serviços, produtos, avaliações, mapa e agendamento via WhatsApp.",
+    category: "Landing Page",
+    platform: "Vercel",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    liveUrl: "https://petsus.vercel.app",
+    gradient: "linear-gradient(135deg, #061426 0%, #075fea 52%, #c7a13b 100%)",
+    image: "/projects/petsus.jpg",
+  },
+  {
     id: "casa-hospitalvet",
     title: "CASA Hospital Vet",
     description:
