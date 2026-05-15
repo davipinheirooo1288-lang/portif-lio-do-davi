@@ -13,6 +13,18 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: "casa-hospitalvet",
+    title: "CASA Hospital Vet",
+    description:
+      "Landing page para hospital veterinário 24h em Fortaleza-CE, com urgência, exames, especialidades, depoimentos, localização e atendimento via WhatsApp.",
+    category: "Landing Page",
+    platform: "Vercel",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    liveUrl: "https://casa-hospitalvet-site.vercel.app",
+    gradient: "linear-gradient(135deg, #061315 0%, #0d3b42 48%, #63c8b4 100%)",
+    image: "/projects/casa-hospitalvet.jpg",
+  },
+  {
     id: "clinica-vitae",
     title: "Clínica Vitae",
     description:
