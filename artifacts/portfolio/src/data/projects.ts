@@ -13,6 +13,18 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: "cmo-ita",
+    title: "CMO Itapipoca",
+    description:
+      "Landing page para centro médico e odontológico em Itapipoca-CE, com especialidades, equipe, avaliações, localização e agendamento via WhatsApp.",
+    category: "Landing Page",
+    platform: "Vercel",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    liveUrl: "https://cmo-ita.vercel.app",
+    gradient: "linear-gradient(135deg, #061d2e 0%, #0f5b78 50%, #8cc8d8 100%)",
+    image: "/projects/cmo-ita.jpg",
+  },
+  {
     id: "beleza-canina",
     title: "Beleza Canina",
     description:
