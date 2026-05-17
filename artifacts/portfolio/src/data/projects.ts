@@ -13,6 +13,18 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: "beleza-canina",
+    title: "Beleza Canina",
+    description:
+      "Landing page para pet shop e consultório veterinário em Itapipoca-CE, com banho e tosa, vacinas, exames, produtos, localização e agendamento via WhatsApp.",
+    category: "Landing Page",
+    platform: "Vercel",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    liveUrl: "https://beleza-canina.vercel.app",
+    gradient: "linear-gradient(135deg, #080807 0%, #28251d 52%, #f7c600 100%)",
+    image: "/projects/beleza-canina.jpg",
+  },
+  {
     id: "clinica-costa-campos",
     title: "Clínica Costa Campos",
     description:
