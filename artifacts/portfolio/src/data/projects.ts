@@ -13,6 +13,18 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: "odontomelo",
+    title: "Odonto Melo",
+    description:
+      "Landing page para clínica odontológica premium em Itapipoca-CE, com doutores, serviços, avaliações, localização e agendamento via WhatsApp.",
+    category: "Landing Page",
+    platform: "Vercel",
+    technologies: ["React", "TypeScript", "Vite", "Tailwind"],
+    liveUrl: "https://odontomelo.vercel.app",
+    gradient: "linear-gradient(135deg, #fdfcf8 0%, #e8dcc6 48%, #6b4f35 100%)",
+    image: "/projects/odontomelo.jpg",
+  },
+  {
     id: "cmo-ita",
     title: "CMO Itapipoca",
     description:
