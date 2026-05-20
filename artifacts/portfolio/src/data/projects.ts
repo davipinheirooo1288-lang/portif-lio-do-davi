@@ -136,18 +136,6 @@ export const projects: Project[] = [
     image: "/projects/cinvet.png",
   },
   {
-    id: "dental-clinic",
-    title: "Dental Clinic",
-    description:
-      "Site institucional para clínica odontológica com design clean, apresentação de serviços e call-to-action eficaz.",
-    category: "Landing Page",
-    platform: "Vercel",
-    technologies: ["TypeScript", "Tailwind", "Vite"],
-    liveUrl: "https://dentalclinic-ita.vercel.app",
-    gradient: "linear-gradient(135deg, #050505 0%, #0a1628 50%, #001428 100%)",
-    image: "/projects/dental-clinic.png",
-  },
-  {
     id: "oral-vitta",
     title: "Oral Vitta",
     description:
