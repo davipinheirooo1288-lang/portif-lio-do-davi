@@ -162,18 +162,6 @@ export const projects: Project[] = [
     image: "/projects/oss-barbeiros.png",
   },
   {
-    id: "clinica-odonto-melo",
-    title: "Clínica Odonto Melo",
-    description:
-      "Site institucional para clínica odontológica com design moderno, apresentação de serviços, equipe especializada e agendamento facilitado.",
-    category: "Landing Page",
-    platform: "Cloudflare",
-    technologies: ["React", "TypeScript", "Tailwind", "Cloudflare Workers"],
-    liveUrl: "https://clinica-odonto-melo.davipinheirooo1288.workers.dev",
-    gradient: "linear-gradient(135deg, #050a14 0%, #0a1a2e 50%, #001428 100%)",
-    image: "/projects/clinica-odonto-melo.svg",
-  },
-  {
     id: "clinica-odontologica-ferreira-seraf",
     title: "Consultório Ferreira Serafim",
     description:
