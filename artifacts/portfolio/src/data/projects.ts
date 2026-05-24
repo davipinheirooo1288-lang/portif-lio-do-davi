@@ -13,6 +13,18 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: "dracarladower",
+    title: "Dra. Carla Dower",
+    description:
+      "Landing page para advocacia internacional em Portugal, com defesa penal para imigrantes, áreas de atuação, depoimentos, localização e atendimento via WhatsApp.",
+    category: "Landing Page",
+    platform: "Vercel",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    liveUrl: "https://dracarladower.vercel.app",
+    gradient: "linear-gradient(135deg, #17110d 0%, #4b3428 48%, #f3eee8 100%)",
+    image: "/projects/dracarladower.jpg",
+  },
+  {
     id: "odontomelo",
     title: "Odonto Melo",
     description:
